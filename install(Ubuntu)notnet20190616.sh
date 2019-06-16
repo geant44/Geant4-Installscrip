@@ -10,14 +10,9 @@
 
 ## THis is for the geant4.10.2.2 and PTSproject-103-002-001-20170925
 
-sudo yum install epel-release -y
+sudo apt update
 
-sudo yum check-update 
-
-sudo yum -y install xerces-c-devel qt4 qt4-devel freeglut-devel motif-devel tk-devel cmake3 libXpm-devel libXmu-devel libXi-devel libXft-devel \
-libXext-devel environment-modules expat openmpi-devel openmpi gcc gcc-c++ make
-
-sudo ln -s /usr/bin/cmake3 /usr/bin/cmake
+sudo apt -y install build-essential libexpat1-dev libgl1-mesa-dev libglu1-mesa-dev libxt-dev xorg-dev libgdcm-tools 
 
 export Geant4=$(pwd)
 export GEANT4_VERSION=10.02.p02
