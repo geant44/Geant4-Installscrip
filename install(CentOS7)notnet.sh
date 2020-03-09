@@ -19,6 +19,8 @@ libXext-devel environment-modules expat openmpi-devel openmpi gcc gcc-c++ make
 
 sudo ln -s /usr/bin/cmake3 /usr/bin/cmake
 
+source /etc/profile.d/module.sh
+
 export Geant4=$(pwd)
 export GEANT4_VERSION=10.02.p02
 
